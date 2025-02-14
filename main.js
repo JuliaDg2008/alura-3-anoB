@@ -19,8 +19,12 @@ for (let i = 0; i < botoes.length; i++) {
         let minutos = Math.floor(segundos / 60);
         let horas = Math.floor(minutos / 60);
         let dias = Math.floor(horas / 24);
-        return dias;
+        segundos %= 60;
+        minutos %= 60;
+        horas %= 24;
+        return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos";
       }
+          
       const tempoObjetivo1 = new Date("2023-10-05T00:00:00");
 
 }
