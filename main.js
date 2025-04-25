@@ -175,47 +175,52 @@ function atualizaCronometro() {
                                 return [0, 0, 0, 0];
                             }
                         }
-                        function atualizaCronometro(){
+                        function atualizaCronometro() {
                             document.getElementById("dias0").textContent = calculaTempo(tempos[0])[0];
                             document.getElementById("horas0").textContent = calculaTempo(tempos[0])[1];
                             document.getElementById("min0").textContent = calculaTempo(tempos[0])[2];
                             document.getElementById("seg0").textContent = calculaTempo(tempos[0])[3];
-                        
-                            for (let i=0; i<contadores.length;i++){
-                                document.getElementById("seg1").textContent = calculaTempo(tempos[1])[3]; 
+
+                            for (let i = 0; i < contadores.length; i++) {
+                                document.getElementById("seg1").textContent = calculaTempo(tempos[1])[3];
                             }
-                            for (let i=0; i<contadores.length;i++){
-                                document.getElementById("seg"+i).textContent = calculaTempo(tempos[i])[3]; 
+                            for (let i = 0; i < contadores.length; i++) {
+                                document.getElementById("seg" + i).textContent = calculaTempo(tempos[i])[3];
                             }
-                            for (let i=0; i<contadores.length;i++){
-                                document.getElementById("seg"+i).textContent = calculaTempo(tempos[i])[3];
-                                console.log("seg"+i);
+                            for (let i = 0; i < contadores.length; i++) {
+                                document.getElementById("seg" + i).textContent = calculaTempo(tempos[i])[3];
+                                console.log("seg" + i);
                             }
                         }
 
-                        function atualizaCronometro(){
+                        function atualizaCronometro() {
                             document.getElementById("dias0").textContent = calculaTempo(tempos[0])[0];
                             document.getElementById("horas0").textContent = calculaTempo(tempos[0])[1];
                             document.getElementById("min0").textContent = calculaTempo(tempos[0])[2];
-                        
-                            for (let i=0; i<contadores.length;i++){
-                                document.getElementById("seg"+i).textContent = calculaTempo(tempos[i])[3];
-                                console.log("seg"+i);
+
+                            for (let i = 0; i < contadores.length; i++) {
+                                document.getElementById("seg" + i).textContent = calculaTempo(tempos[i])[3];
+                                console.log("seg" + i);
                             }
                         }
 
-                        function atualizaCronometro(){
-                            for (let i=0; i<contadores.length;i++){
-                                document.getElementById("dias"+i).textContent = calculaTempo(tempos[i])[0];
-                                document.getElementById("horas"+i).textContent = calculaTempo(tempos[i])[1];
-                                document.getElementById("min"+i).textContent = calculaTempo(tempos[i])[2];
-                                document.getElementById("seg"+i).textContent = calculaTempo(tempos[i])[3];
-                                console.log("seg"+i);
+                        function atualizaCronometro() {
+                            for (let i = 0; i < contadores.length; i++) {
+                                document.getElementById("dias" + i).textContent = calculaTempo(tempos[i])[0];
+                                document.getElementById("horas" + i).textContent = calculaTempo(tempos[i])[1];
+                                document.getElementById("min" + i).textContent = calculaTempo(tempos[i])[2];
+                                document.getElementById("seg" + i).textContent = calculaTempo(tempos[i])[3];
+                                console.log("seg" + i);
                             }
                             const tempoObjetivo1 = new Date("2023-10-05T00:00:00");
+
+                            document.getElementById("seg0").textContent = calculaTempo(tempos[0])[3];
+                            document.getElementById("seg1").textContent = calculaTempo(tempos[1])[3];
+                            document.getElementById("seg2").textContent = calculaTempo(tempos[2])[3];
+                            document.getElementById("seg3").textContent = calculaTempo(tempos[3])[3];
                         }
-                     
-                        
+
+
 
 
 
