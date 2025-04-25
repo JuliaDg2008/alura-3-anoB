@@ -212,7 +212,9 @@ function atualizaCronometro() {
                                 document.getElementById("seg"+i).textContent = calculaTempo(tempos[i])[3];
                                 console.log("seg"+i);
                             }
+                            const tempoObjetivo1 = new Date("2023-10-05T00:00:00");
                         }
+                     
                         
 
 
